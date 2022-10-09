@@ -18,6 +18,11 @@ body{
 
 main{
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20%;
 }
 
 .grid-container{
@@ -27,51 +32,29 @@ main{
     align-items: center;
 }
 
-.grid-item{
-    padding: 4%;
-}
-
-.i1{
-    background-color: var(--Bright-orange);
+.commoncss{    
     color: white;
-    width:100%;
+    width: 100%;
     height: 100%;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
+}
+
+.i1{
+    background-color: var(--Bright-orange);
 }
 
 
 .i2{
     background-color: var(--Darkcyan);
-    width:100%;
-    height: 100%;
-    color: white;
-    width:100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 5%;
-    gap: 1rem;
 }
 
 .i3{
     background-color: var(--Very-dark-cyan);
-    width:100%;
-    height: 100%;
-    color: white;
-    width:100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 5%;
-    gap: 1rem;
 }
 
 .heading{
@@ -86,15 +69,12 @@ main{
     color: var(--Transparent-white);
 }
 
-.buttonx1{
-    /* padding: 5% 15%;
-    /* border-radius: 25%; */
+.btn{
     background-color: white;
-    color: var(--Bright-orange);
     border: 2px solid white;
     font-size: 14px;
     font-weight: bold;
-    padding: 20px 60px;
+    padding: 15px 40px;
     text-align: center;
     text-transform: capitalize;
     text-decoration: none;
@@ -102,10 +82,22 @@ main{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 32px;
-}
+}   
 
-.buttonx1:hover{
+.btn:hover{
     background-color: transparent;
     border: 2px solid white;
     color: white;
+}
+
+.custom1{
+    color: var(--Bright-orange);
+}
+
+.custom2{
+    color: var(--Darkcyan);
+}
+
+.custom3{
+    color: var(--Very-dark-cyan);
 }
