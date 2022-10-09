@@ -1,4 +1,4 @@
-# card-column-component
+# Card Catalogue Design
 
 ###### Frontend Mentor Challenge-3
 
