@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
 :root{
     --Bright-orange: hsl(31, 77%, 52%);
     --Darkcyan: hsl(184, 100%, 22%);
     --Very-dark-cyan: hsl(179, 100%, 13%);
-    /* --Verylight-gray (background, headings, buttons): hsl(0, 0%, 95%);
-    --Transparent-white (paragraphs): hsla(0, 0%, 100%, 0.75); */
+    /* --Verylight-gray (background, headings, buttons): hsl(0, 0%, 95%); */
+    --Transparent-white : hsla(0, 0%, 100%, 0.75);
 }
 
 
@@ -19,25 +21,91 @@ main{
 }
 
 .grid-container{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item{
+    padding: 4%;
 }
 
 .i1{
-    border: 1px solid black;
     background-color: var(--Bright-orange);
+    color: white;
     width:100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
 }
+
 
 .i2{
     background-color: var(--Darkcyan);
     width:100%;
     height: 100%;
+    color: white;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 5%;
+    gap: 1rem;
 }
 
 .i3{
     background-color: var(--Very-dark-cyan);
     width:100%;
     height: 100%;
+    color: white;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 5%;
+    gap: 1rem;
+}
+
+.heading{
+    font-family: "Big Shoulders Display", cursive;
+    text-transform: uppercase;
+    
+}
+
+.desc{
+    font-family: "Lexend Deca", sans-serif;
+    line-height: 2rem;
+    color: var(--Transparent-white);
+}
+
+.buttonx1{
+    /* padding: 5% 15%;
+    /* border-radius: 25%; */
+    background-color: white;
+    color: var(--Bright-orange);
+    border: 2px solid white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px 60px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 32px;
+}
+
+.buttonx1:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
 }
