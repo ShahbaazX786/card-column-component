@@ -26,6 +26,7 @@ main{
 }
 
 .grid-container{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -41,7 +42,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 1rem;
+    /* gap: 1rem; */
 }
 
 .i1{
@@ -60,21 +61,26 @@ main{
 .heading{
     font-family: "Big Shoulders Display", cursive;
     text-transform: uppercase;
+    font-size: 2.2rem;
     
 }
 
 .desc{
     font-family: "Lexend Deca", sans-serif;
-    line-height: 2rem;
+    line-height: 1.5rem;
+    font-size: 14px;
     color: var(--Transparent-white);
+    margin-bottom: 30%;
+    padding-right: 8%;
 }
 
 .btn{
     background-color: white;
     border: 2px solid white;
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: bold;
-    padding: 15px 40px;
+    width: 80%;
+    padding: 15px 0px;
     text-align: center;
     text-transform: capitalize;
     text-decoration: none;
@@ -101,3 +107,5 @@ main{
 .custom3{
     color: var(--Very-dark-cyan);
 }
+
+
